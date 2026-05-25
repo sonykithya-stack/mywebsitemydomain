@@ -1,0 +1,178 @@
+/*header*/
+.header {
+    display: flex;
+    border: none;
+    background-color: rgb(15, 15, 15);
+    justify-content: space-between;
+    padding: 10px;
+}
+.header .card h3 i {
+    display: flex;
+    border: none;
+    background-color: black;
+    color: rgb(239, 237, 237);}
+    
+    .header .card h3  {
+    display: flex;
+    border: none;
+    background-color: black;
+    color: rgb(239, 237, 237);
+    
+   
+    
+}
+.header .card h3 i {
+    border: none;
+    display: flex;
+    font-size: 10px;
+    padding: 15px;
+    justify-content: space-between;
+}
+.header.card h3 i {
+    display: flex;
+    padding: 15px;
+    font-size: 10px;
+    justify-content: space-between;
+}
+.container {
+    background-color: white;
+    /* ប្រើសម្រាប់រំកិលអក្សរទៅខាងស្ដាំ */
+    display: flex;
+    /* ប្រើសម្រាប់រំកិល ojectទាំងមកកណ្ដាល */
+    align-items: center;
+    /* ប្រើសម្រាប់ដាក់គម្លាត់logoនិងអក្សរអោយឆ្ងាយពីរគ្នា */
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px black;
+    margin-top: 10px;
+}
+
+/* menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    background-color: orange;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu li a i {
+    margin-right: 8px;
+    font-size: 15px;
+    color: gray;
+}
+
+/* banner */
+.banner img {
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 5px;
+    padding: 10px;
+}
+.menu-icon{
+    margin-right: 10;
+    cursor :pointer;
+    display: none;
+
+}
+/*screen for responseive foe mobile */
+@media screen and (max-width : 768px){
+    .menu{
+        display :none;
+        position :absolute;
+        top:70px;
+        left:0px;
+        width: 94px;
+        background-color: aliceblue;
+        z-index :1;
+        flex-direction: column;
+        padding :2px;
+
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+.home {
+    margin-left: 35px;
+    width: 100%;
+}
+
+
+.product img {
+    display: flex;
+    height: 50px;
+    width: 10%;
+    margin-top: 10px;
+    height: 10%;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 50%;
+}
+.product .card {
+    border: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    box-shadow: 0 4px 7px 0 rgba (0 , 0 , 0 ,0.2);
+    margin: 10px;
+    border-radius: 5px;
+    height: 440px;
+}
+.card img {
+    border: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+}
+.card p{
+    text-align: center;
+}
+.card h1{
+    text-align: center;
+    color: red;
+}
+.card h6{
+    text-align: justify;
+    padding: 5px;
+}
+.card .icon{
+    color: gold;
+    margin-left: 110px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.card li {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: orange;
+    font-size: 20px;
+}

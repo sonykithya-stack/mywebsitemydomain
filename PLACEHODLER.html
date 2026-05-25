@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon " href="/devtools-simples/favicon-96x96.png"/>
+        <title >Demo:Get Started Debugging Javascript with Chrome Devtools</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1 " >
+    </head>
+    <body>
+        <h1> Demo:Get Started Debugging Javascript with Chrome Devtools </h1>
+        <label for="num1">Number1</label>
+        <input placeholder="Number1" id="num1"><br>
+        <label for="num2">Number2</label>
+        <input placeholder="Number2" id="num2"><br>
+        <button > Add number 1 & number2 </button>
+        <p> </p>
+        
+    </body>
+</html>
+<script> 
+     function onClick(){
+   if (inputAreEmpty()){
+   label.textContent ="Error : one or both Input are empty.";
+   return ;
+}
+updateable();
+}
+
+function inputAreEmpty(){
+    if (getNumber1()===""|| getNumber2() === ""){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function updateable(){
+    var Num1 =getNumber1();
+    var Num2= getNumber2();
+    var sum = Num1 + Num2;
+    label.textContent =Num1 + "+" + Num2 + "+" + sum ;
+}
+
+function getNumber1(){
+    return inputs[0].value;
+}
+function getNumber2(){
+    return inputs[1].value;
+}
+
+var inputs =document.querySelectorAll("input");
+var inputs=document.querySelector("p");
+var btn = document.querySelector("button");
+btn.addEventListener("click", onClick);
+
+</script>
+
+
+<script>
+     const menu=document.getElementById("menu-btn");
+     const menuIcon=document.getElementById("menu");
+     menuIcon,addEventListener("click",()=>{})
+  </script>

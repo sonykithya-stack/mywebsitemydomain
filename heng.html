@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+</head>
+ <body>
+    <h1 id="result"> helllo</h1>
+    UserName : <input type="text" name="" id="user" />
+    <span id="check_user"> </span>
+    <br/>
+    <input type="button" value="Check" onclick="check()"/>
+    <input type="button" value ="change" onclick="myfunction()"/>
+    <p id="demo">PLease visit microsoft! ,welcome to microsoft 
+    </p>
+    <h1>JavaScript Array</h1>
+    <h2> creating array</h2>
+    <p id="demo2"> avoiding using new array () . Use []instead .</p>
+    
+  </body>
+</html>
+<script>
+     function myfunction(){
+        let text =document.getElementById("demo").innerHTML;
+         document.getElementById("demo").innerHTML =text.replace("microsoft " , "beltei");
+     }
+     const points = (40,100,1,5,25,100);
+     ; document.getElementById ("demo2").innerHTML =points [220];
+    var text ="Welcome to Beltei University in cambodia. ;)";
+    var dated = "2026-01-21";
+    var m= dated.substr(5,2);
+    var d =dated.substr(8,2);
+    switch(m){
+        case"10":
+    }
+    function check (){
+        var txt = document.getElementById("user").value;
+        if(txt.length < 6) {
+            documment.getElementById("check_user").innerHTML=
+            "user must be 6 characters";
+        }else {
+            document.getElementById("check_user").innerHTML = "successful...";
+        }
+    }
+    const person={
+        firstname: "sony",
+        lastname:"Kitya",
+        age:"20",
+        email:"sonykitya@gmail.com",
+        phone: "010557857",
+        address :"Phnom penh sity",
+
+    };
+    document.getElementById("result").innerHTML =" Fullname:" + person.firstname +" " +person.lastname+" \n Email:"+ person.email;
+    //alert (
+       // "Fullname:" +
+       //  person.firstname + 
+       //  " " +
+       //  person.lastname+
+        // "\n Email: "+
+        // person.email);
+
+</script>

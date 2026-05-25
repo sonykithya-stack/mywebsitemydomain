@@ -1,0 +1,87 @@
+
+.header{
+    display: flex;
+    border: none;
+    background-color: black;
+    justify-content: space-between;
+    margin: 15px;
+}
+.header .card{
+    border: none;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+.header .card h3{
+    padding: 10px;
+    font-size: 15px;
+}
+.header .card h3 i{
+    padding: 5px;
+}
+
+.container{
+    background-color: white;
+    margin: 10px;  
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    margin-left: 150px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: orange;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    
+}
+.col-lg-3{
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 75px;
+    height: 60px;
+    font-size: 100%;
+    border-radius: 10px;
+}
+table{
+    font-size: 100%;
+}
+td{
+    font-size: 100%;
+}
+tr{
+    font-size: 100%;
+}
+.banner img{
+    margin-left: 109px;
+    flex-wrap: wrap;
+    width: 85.8%;
+}
+.Catelory{
+    display: flex;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.Catelory .card{
+    margin: 10px;
+    width: 100%;
+
+}
